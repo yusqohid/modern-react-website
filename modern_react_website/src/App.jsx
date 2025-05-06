@@ -1,6 +1,8 @@
 import "./App.css";
+import CompanyLogo from "./components/CompanyLogo.jsx";
 import Hero from "./components/Hero.jsx";
 import Navbar from "./components/Navbar.jsx";
+import PurposeSection from "./components/PurposeSection.jsx";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <div className="overflow-hidden">
         <Navbar />
         <Hero />
+        <CompanyLogo />
+        <PurposeSection />
       </div>
     </main>
   );
