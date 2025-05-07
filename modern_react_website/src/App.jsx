@@ -1,8 +1,12 @@
 import "./App.css";
 import CompanyLogo from "./components/CompanyLogo.jsx";
+import FeaturesSection from "./components/FeaturesSection.jsx";
 import Hero from "./components/Hero.jsx";
+import MonitorSection from "./components/MonitorSection.jsx";
 import Navbar from "./components/Navbar.jsx";
+import PricingSection from "./components/PricingSection.jsx";
 import PurposeSection from "./components/PurposeSection.jsx";
+import ScheduleSection from "./components/ScheduleSection.jsx";
 
 function App() {
   return (
@@ -13,6 +17,10 @@ function App() {
         <Hero />
         <CompanyLogo />
         <PurposeSection />
+        <FeaturesSection />
+        <ScheduleSection />
+        <MonitorSection />
+        <PricingSection />
       </div>
     </main>
   );

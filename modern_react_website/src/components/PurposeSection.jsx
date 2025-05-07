@@ -1,13 +1,13 @@
 const PurposeSection = () => {
   const features = [
     {
-      icon: "0",
+      icon: "🟣",
       title: "Build from Impact",
       description:
         "We identify and nurture a truly diverse team of designers, developers and marketers",
     },
     {
-      icon: "0",
+      icon: "🔴",
       title: "In sync with you",
       description:
         "We work the way you do by adapting to your workflows and rhythm we aim to blend in for a seamless.",
@@ -20,15 +20,15 @@ const PurposeSection = () => {
         <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
           <div>
             <div className="text-sm text-purple-600 font-medium mb-2">
-              ACHIEVE MORE
+              <p>ACHIEVE MORE</p>
+              <h2 className="text-3xl md:w-4/5 md:text-4xl font-bold text-gray-900">
+                Purpose of a convoy is too keep your team
+              </h2>
             </div>
-            <h2 className="text-3xl md:w-4/5 md:text-4xl font-bold text-gray-900">
-              Purpose of a convoy is too keep your team
-            </h2>
           </div>
-          <div className="col-span-2 grid grid-cols-1 justify-between gap-8">
+          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 justify-between gap-8">
             {features.map((feature, index) => (
-              <div className="flex items-start space-x-4">
+              <div key={index} className="flex items-start space-x-4">
                 <div className="w-12 h-12 flex items-center justify-center rounded-lg">
                   {feature.icon}
                 </div>
